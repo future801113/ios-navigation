@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  MainTabBarViewController.h
 //  NavigationTest
 //
 //  Created by ilab2016 on 2016/2/11.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface MainTabBarViewController : UITabBarController
 
 @end
-

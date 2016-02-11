@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "MainTabBarViewController.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +17,15 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    //設定第一頁
+    UIStoryboard* storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    MainTabBarViewController* targetViewController = [storyboard instantiateViewControllerWithIdentifier:@"MainTabBarViewController"];
+    
+    //整個畫面的位置和大小
+    self.window = [[UIWindow alloc] initWithFrame:UIScreen.mainScreen.bounds];
+    self.window.rootViewController = targetViewController;
+    
+    [self.window makeKeyAndVisible];
     return YES;
 }
 
