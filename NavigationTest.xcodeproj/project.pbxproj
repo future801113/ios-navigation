@@ -13,6 +13,10 @@
 		E9EF86061C6C4D430005443E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9EF86051C6C4D430005443E /* Assets.xcassets */; };
 		E9EF86091C6C4D430005443E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9EF86071C6C4D430005443E /* LaunchScreen.storyboard */; };
 		E9EF86151C6C4E220005443E /* MainTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9EF86141C6C4E220005443E /* MainTabBarViewController.m */; };
+		E9EF861D1C6C585C0005443E /* AppUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = E9EF861C1C6C585C0005443E /* AppUtility.m */; };
+		E9EF861F1C6C58DF0005443E /* BuyTicket.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9EF861E1C6C58DF0005443E /* BuyTicket.storyboard */; };
+		E9EF86251C6C98FC0005443E /* TicketListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9EF86241C6C98FC0005443E /* TicketListViewController.m */; };
+		E9EF86281C6C991B0005443E /* TicketInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9EF86271C6C991B0005443E /* TicketInfoViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,13 @@
 		E9EF860A1C6C4D430005443E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E9EF86131C6C4E220005443E /* MainTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainTabBarViewController.h; path = Class/Flow/Main/MainTabBarViewController.h; sourceTree = "<group>"; };
 		E9EF86141C6C4E220005443E /* MainTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainTabBarViewController.m; path = Class/Flow/Main/MainTabBarViewController.m; sourceTree = "<group>"; };
+		E9EF861B1C6C585C0005443E /* AppUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppUtility.h; path = Class/Utility/AppUtility/AppUtility.h; sourceTree = "<group>"; };
+		E9EF861C1C6C585C0005443E /* AppUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppUtility.m; path = Class/Utility/AppUtility/AppUtility.m; sourceTree = "<group>"; };
+		E9EF861E1C6C58DF0005443E /* BuyTicket.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = BuyTicket.storyboard; path = Class/Flow/BuyTicket/BuyTicket.storyboard; sourceTree = "<group>"; };
+		E9EF86231C6C98FC0005443E /* TicketListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TicketListViewController.h; path = Class/Flow/Main/TicketListViewController.h; sourceTree = "<group>"; };
+		E9EF86241C6C98FC0005443E /* TicketListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TicketListViewController.m; path = Class/Flow/Main/TicketListViewController.m; sourceTree = "<group>"; };
+		E9EF86261C6C991B0005443E /* TicketInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TicketInfoViewController.h; path = Class/Flow/BuyTicket/TicketInfoViewController.h; sourceTree = "<group>"; };
+		E9EF86271C6C991B0005443E /* TicketInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TicketInfoViewController.m; path = Class/Flow/BuyTicket/TicketInfoViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +91,7 @@
 		E9EF86101C6C4D750005443E /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				E9EF86191C6C58080005443E /* Utility */,
 				E9EF86111C6C4D850005443E /* Flow */,
 			);
 			name = Class;
@@ -88,6 +100,7 @@
 		E9EF86111C6C4D850005443E /* Flow */ = {
 			isa = PBXGroup;
 			children = (
+				E9EF86161C6C570F0005443E /* BuyTicket */,
 				E9EF86121C6C4D9D0005443E /* Main */,
 			);
 			name = Flow;
@@ -99,8 +112,37 @@
 				E9EF86021C6C4D430005443E /* Main.storyboard */,
 				E9EF86131C6C4E220005443E /* MainTabBarViewController.h */,
 				E9EF86141C6C4E220005443E /* MainTabBarViewController.m */,
+				E9EF86231C6C98FC0005443E /* TicketListViewController.h */,
+				E9EF86241C6C98FC0005443E /* TicketListViewController.m */,
 			);
 			name = Main;
+			sourceTree = "<group>";
+		};
+		E9EF86161C6C570F0005443E /* BuyTicket */ = {
+			isa = PBXGroup;
+			children = (
+				E9EF861E1C6C58DF0005443E /* BuyTicket.storyboard */,
+				E9EF86261C6C991B0005443E /* TicketInfoViewController.h */,
+				E9EF86271C6C991B0005443E /* TicketInfoViewController.m */,
+			);
+			name = BuyTicket;
+			sourceTree = "<group>";
+		};
+		E9EF86191C6C58080005443E /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				E9EF861A1C6C580D0005443E /* AppUtility */,
+			);
+			name = Utility;
+			sourceTree = "<group>";
+		};
+		E9EF861A1C6C580D0005443E /* AppUtility */ = {
+			isa = PBXGroup;
+			children = (
+				E9EF861B1C6C585C0005443E /* AppUtility.h */,
+				E9EF861C1C6C585C0005443E /* AppUtility.m */,
+			);
+			name = AppUtility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,6 +205,7 @@
 				E9EF86091C6C4D430005443E /* LaunchScreen.storyboard in Resources */,
 				E9EF86061C6C4D430005443E /* Assets.xcassets in Resources */,
 				E9EF86041C6C4D430005443E /* Main.storyboard in Resources */,
+				E9EF861F1C6C58DF0005443E /* BuyTicket.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,8 +216,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9EF861D1C6C585C0005443E /* AppUtility.m in Sources */,
 				E9EF86151C6C4E220005443E /* MainTabBarViewController.m in Sources */,
+				E9EF86281C6C991B0005443E /* TicketInfoViewController.m in Sources */,
 				E9EF85FE1C6C4D430005443E /* AppDelegate.m in Sources */,
+				E9EF86251C6C98FC0005443E /* TicketListViewController.m in Sources */,
 				E9EF85FB1C6C4D430005443E /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
